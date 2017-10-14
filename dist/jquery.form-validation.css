@@ -1,0 +1,36 @@
+.fv-form-group {
+    margin-bottom: 5px;
+}
+
+.fv-form-group label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.fv-form-group input[type="text"]{
+    font-size: 1.2em;
+    width: 500px;
+}
+
+.fv-form-group input[type="submit"]{
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+.fv-error {
+    color: darkred;
+}
+
+.fv-success {
+    color: forestgreen;
+}
+
+.fv-disabled {
+    background-color: lightgreen;
+}
+
+input.fv-bg-error {
+    background-color: indianred;
+    border: 1px solid red;
+}

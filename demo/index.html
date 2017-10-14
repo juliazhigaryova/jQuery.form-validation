@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Плагин для валидации пользовательских данных</title>
+    <link rel="stylesheet" href="../dist/jquery.form-validation.css">
+    <!--<script src="../bower_components/jquery/dist/jquery.min.js"></script>-->
+    <script src="../dist/jquery.form-validation.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.main-form').formValidation();
+        });
+    </script>
+</head>
+<body>
+<h2>Форма со встроенной валидацией посредством плагина</h2>
+<form action="/" method="post" class="main-form">
+    <div class="fv-form-group">
+        <label for="name">Имя пользователя:</label>
+        <input type="text" id="name" name="name"
+               data-fv-validator="string"
+               data-fv-min="3"
+               data-fv-max="10"
+               data-fv-required="true"
+               data-fv-pattern="^[a-zа-яё]+$"
+               data-fv-success="Поле заполнено верно"
+               data-fv-error="Введите Ваше настоящее имя">
+    </div>
+    <div class="fv-form-group">
+        <label for="num">Введите число от 1000 до 50000:</label>
+        <input type="text" id="num" name="name"
+               data-fv-validator="number"
+               data-fv-min="1000"
+               data-fv-max="50000"
+               data-fv-required="true">
+    </div>
+    <div class="fv-form-group">
+        <label for="telephone">Номер телефона (по регулярному выражению):</label>
+        <input type="text" id="telephone" name="telephone"
+               data-fv-validator="regexp"
+               data-fv-pattern="^\+7[\d]{3}-[\d]{3}-[\d]{2}-[\d]{2}$"
+               placeholder="+7900-000-00-00"
+               data-fv-required="true">
+    </div>
+    <div class="fv-form-group">
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email"
+               data-fv-validator="email"
+               data-fv-required="true">
+    </div>
+    <div class="fv-form-group">
+        <input type="submit" value="Отправить">
+    </div>
+</form>
+</body>
+</html>

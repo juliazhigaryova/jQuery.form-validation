@@ -1,0 +1,14 @@
+{
+  "name": "jquery.form-validation",
+  "authors": [
+    "Julia"
+  ],
+  "description": "Plagin for form validation",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
