@@ -14,6 +14,7 @@ jQuery.form-validation - это плагин jQuery, написанный  на 
 
 1. Распакуйте архив.
 2. Скачайте и подключите  библиотеку jQuery (jQuery.com) к своему проекту. Если вы используете bower, выполните команду _bower install_ в консоли;
+
 ![Bower](bower.png)
 3. Подключите скрипт jquery.form-validation.js на свою страницу.
 4. Подключите файл стилей jquery.form-validation.css
